@@ -46,10 +46,35 @@ export default function Blog() {
           </article>
         ))}
       </div>
-      <div className="mt-8">
+      <div className="mt-8 space-y-4">
         <Link href="/" className="text-blue-500 hover:text-blue-700">
           ← Back to Home
         </Link>
+
+        {/* Optional Catch-All Route Demo Section */}
+        <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+          <h3 className="text-lg font-semibold mb-2 text-green-800">Optional Catch-All Route Demo</h3>
+          <p className="text-sm text-green-700 mb-3">
+            Experience the difference between regular and optional catch-all routes:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/blog/demo-home" className="text-xs bg-green-100 text-green-800 px-3 py-1 rounded hover:bg-green-200">
+              🆕 Optional Catch-All Demo
+            </Link>
+            <Link href="/blog/demo/category/frameworks" className="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded hover:bg-blue-200">
+              Category Filter
+            </Link>
+            <Link href="/blog/demo/tag/react" className="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded hover:bg-purple-200">
+              Tag Filter
+            </Link>
+            <Link href="/blog/demo/search/tutorial" className="text-xs bg-orange-100 text-orange-800 px-3 py-1 rounded hover:bg-orange-200">
+              Search Demo
+            </Link>
+          </div>
+          <p className="text-xs text-green-600 mt-2">
+            💡 Optional catch-all routes can handle URLs with or without path segments
+          </p>
+        </div>
       </div>
     </div>
   );
